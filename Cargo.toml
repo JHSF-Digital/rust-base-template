@@ -1,0 +1,3 @@
+[workspace]
+resolver = "2"
+members = ["api", "components/adapters/http_in", "components/adapters/rabbit_in", "components/adapters/rabbit_out", "components/infra", "components/kernel", "worker"]
