@@ -11,6 +11,13 @@ de um serviço em rust.
 
 ### Components
 
-* [adapters](components/adapters): Um subdiretório com crates do meio que o serviço faz uso.
-* [infra](components/infra)
-* [kernel](components/kernel)
+* [adapters](components/adapters/README.md): Um subdiretório com crates do meio
+  que o serviço faz uso.
+
+* [infra](components/infra): Uma crate que implementa a base do serviço. Suas
+  configurações, setup de log, setup de tracing. Além disso, exporta, através do
+  _factories_ API para inicialização do serviço (tanto api quanto worker).
+
+* [kernel](components/kernel): Crate principal do serviço, onde são definidos os
+  contratos (traits) de um handler/endpoint, estruturas de domínio e as implementações
+  efetivas dos handlers.
