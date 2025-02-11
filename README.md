@@ -1,4 +1,6 @@
-```lua
+# Estutura de pastas
+
+```yml
 my_project/
 │── app/
 │   ├── api/             # API Axum
