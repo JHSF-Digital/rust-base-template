@@ -1,4 +1,3 @@
-.
 ├── Cargo.toml
 ├── app/
 │   ├── mod.rs
