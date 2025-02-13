@@ -3,6 +3,7 @@ use tokio::net::TcpListener;
 
 mod routes;
 mod handlers;
+mod middlewares;
 
 use routes::health_check::health_routes;
 
